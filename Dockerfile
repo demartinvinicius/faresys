@@ -25,3 +25,8 @@ RUN mkdir /usr/local/blender && \
 
 #Put blender on the PATH Variable
 ENV PATH /usr/local/blender:$PATH
+
+#Copy the blend sample file to image
+RUN mkdir /works
+COPY ./animals.blend /works
+
